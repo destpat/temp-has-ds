@@ -43,7 +43,7 @@ pnpm --filter docs dev             # Storybook dev server
 Components use **Base UI** headless primitives + **Tailwind CSS v4** styling.
 
 Every component must:
-1. **`forwardRef`**: always wrap with `forwardRef` so consumers can attach a `ref`.
+1. **No `forwardRef`**: the package targets React >= 19 where `ref` is a regular prop. Accept `ref` directly via destructuring, no `forwardRef` wrapper needed.
 2. **`...rest` props**: accept and spread all native HTML props via `ComponentPropsWithRef<"div">` (or the corresponding HTML element) + `...rest` on the root element.
 3. **Export only the public API**: the component + its types. All `cva` definitions stay internal to the component — consumers should use the component directly.
 

@@ -2,12 +2,12 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Alert } from "./Alert";
 
 /**
- * Alert component following DSFR (Systeme de Design de l'Etat) guidelines.
+ * Composant Alerte suivant les guidelines DSFR.
  *
- * Draws attention to contextual information without interrupting the user's flow.
- * Supports 4 variants (info, success, warning, error) and 2 sizes (md, sm).
+ * Attire l'attention sur une information contextuelle sans interrompre le flux de l'utilisateur.
+ * Supporte 4 variantes (info, success, warning, error) et 2 tailles (md, sm).
  *
- * @see [Figma Source](https://www.figma.com/design/FnyYDn4Jb09qWi891lyrCX/DSHAS-Composants?node-id=17240-129598&m=dev)
+ * @see [Source Figma](https://www.figma.com/design/FnyYDn4Jb09qWi891lyrCX/DSHAS-Composants?node-id=17240-129598&m=dev)
  */
 const meta: Meta<typeof Alert> = {
 	title: "Components/Alert",
@@ -31,17 +31,16 @@ const meta: Meta<typeof Alert> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-/** Information alert for highlighting important details. */
+/** Alerte d'information pour mettre en avant des details importants. */
 export const Info: Story = {
 	args: {
 		variant: "info",
 		title: "Information",
-		children:
-			"Ceci est une alerte d'information pour mettre en exergue des informations importantes.",
+		children: "Ceci est une alerte d'information pour mettre en exergue des informations importantes.",
 	},
 };
 
-/** Success alert confirming a completed action. */
+/** Alerte de succes confirmant une action terminee. */
 export const Success: Story = {
 	args: {
 		variant: "success",
@@ -50,7 +49,7 @@ export const Success: Story = {
 	},
 };
 
-/** Warning alert for urgent information requiring attention. */
+/** Alerte d'avertissement pour une information urgente necessitant l'attention. */
 export const Warning: Story = {
 	args: {
 		variant: "warning",
@@ -59,8 +58,8 @@ export const Warning: Story = {
 	},
 };
 
-/** Error alert for blocking issues or form validation failures. */
-export const Error: Story = {
+/** Alerte d'erreur pour les problemes bloquants ou les erreurs de validation. */
+export const ErrorVariant: Story = {
 	args: {
 		variant: "error",
 		title: "Erreur",
@@ -68,7 +67,7 @@ export const Error: Story = {
 	},
 };
 
-/** Alert without description, title only. */
+/** Alerte sans description, uniquement le titre. */
 export const TitleOnly: Story = {
 	args: {
 		variant: "error",
@@ -76,7 +75,7 @@ export const TitleOnly: Story = {
 	},
 };
 
-/** Uncontrolled: the alert hides itself when closed. */
+/** Non controlee : l'alerte se masque d'elle-meme au clic sur la croix. */
 export const Closable: Story = {
 	args: {
 		variant: "warning",
@@ -86,7 +85,7 @@ export const Closable: Story = {
 	},
 };
 
-/** Controlled: the consumer manages visibility via onClose. */
+/** Controlee : le consommateur gere la visibilite via onClose. */
 export const Controlled: Story = {
 	args: {
 		variant: "error",
@@ -96,7 +95,7 @@ export const Controlled: Story = {
 	},
 };
 
-/** Small size — compact alert with description only, no title. */
+/** Taille SM — alerte compacte avec description uniquement, sans titre. */
 export const Small: Story = {
 	args: {
 		variant: "info",
@@ -105,7 +104,7 @@ export const Small: Story = {
 	},
 };
 
-/** Small closable alert. */
+/** Taille SM avec bouton de fermeture. */
 export const SmallClosable: Story = {
 	args: {
 		variant: "success",
@@ -115,40 +114,64 @@ export const SmallClosable: Story = {
 	},
 };
 
-/** All 4 variants in MD size. */
+/** Les 4 variantes en taille MD. */
 export const AllVariantsMD: Story = {
 	render: () => (
 		<div className="flex flex-col gap-4">
-			<Alert variant="info" title="Information">
+			<Alert
+				variant="info"
+				title="Information"
+			>
 				Description
 			</Alert>
-			<Alert variant="success" title="Succes">
+			<Alert
+				variant="success"
+				title="Succes"
+			>
 				Description
 			</Alert>
-			<Alert variant="warning" title="Avertissement">
+			<Alert
+				variant="warning"
+				title="Avertissement"
+			>
 				Description
 			</Alert>
-			<Alert variant="error" title="Erreur">
+			<Alert
+				variant="error"
+				title="Erreur"
+			>
 				Description
 			</Alert>
 		</div>
 	),
 };
 
-/** All 4 variants in SM size. */
+/** Les 4 variantes en taille SM. */
 export const AllVariantsSM: Story = {
 	render: () => (
 		<div className="flex flex-col gap-4">
-			<Alert variant="info" size="sm">
+			<Alert
+				variant="info"
+				size="sm"
+			>
 				Description
 			</Alert>
-			<Alert variant="success" size="sm">
+			<Alert
+				variant="success"
+				size="sm"
+			>
 				Description
 			</Alert>
-			<Alert variant="warning" size="sm">
+			<Alert
+				variant="warning"
+				size="sm"
+			>
 				Description
 			</Alert>
-			<Alert variant="error" size="sm">
+			<Alert
+				variant="error"
+				size="sm"
+			>
 				Description
 			</Alert>
 		</div>

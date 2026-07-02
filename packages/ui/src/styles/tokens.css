@@ -1,22 +1,36 @@
 @theme {
-  --color-blue-france: #003a98;
-  --color-blue-france-light: #e3e3fd;
-  --color-blue-france-lighter: #ececfe;
-  --color-blue-france-contrast: #f5f5fe;
-  --color-red-marianne: #d74e54;
+	--color-blue-france: #003a98;
+	--color-blue-france-hover: #0048be;
+	--color-blue-france-light: #e3e3fd;
+	--color-blue-france-lighter: #ececfe;
+	--color-blue-france-contrast: #f5f5fe;
+	--color-red-marianne: #d74e54;
 
-  --color-grey-title: #161616;
-  --color-grey-text: #666666;
-  --color-grey-contrast: #eeeeee;
-  --color-grey-bg: #ffffff;
+	--color-grey-title: #161616;
+	--color-grey-text: #666666;
+	--color-grey-contrast: #eeeeee;
+	--color-grey-bg: #ffffff;
 
-  --color-hover-overlay: rgba(0, 0, 0, 0.04);
+	--color-hover-overlay: rgba(0, 0, 0, 0.04);
 
-  --color-info: #0063cb;
-  --color-success: #18753c;
-  --color-warning: #b34000;
-  --color-error: #ce0500;
+	--color-info: #0063cb;
+	--color-info-light: #e8edff;
+	--color-success: #18753c;
+	--color-success-light: #b8fec9;
+	--color-warning: #b34000;
+	--color-warning-light: #ffe9e6;
+	--color-error: #ce0500;
+	--color-error-light: #ffe9e9;
 
-  --font-raleway: "Raleway", sans-serif;
-  --font-sans: "Raleway", sans-serif;
+	--color-yellow: #716043;
+	--color-yellow-light: #feecc2;
+	--color-purple: #6e45a5;
+	--color-purple-light: #f0e5ff;
+	--color-pink: #a94163;
+	--color-pink-light: #fde5ec;
+	--color-teal: #0e7c6b;
+	--color-teal-light: #d5f5f0;
+
+	--font-raleway: "Raleway", sans-serif;
+	--font-sans: "Raleway", sans-serif;
 }

@@ -72,7 +72,10 @@ describe("Accordion", () => {
 	it("does not open disabled items", () => {
 		render(
 			<AccordionRoot>
-				<AccordionItem value="x" disabled>
+				<AccordionItem
+					value="x"
+					disabled
+				>
 					<AccordionTrigger>Disabled</AccordionTrigger>
 					<AccordionContent>Hidden</AccordionContent>
 				</AccordionItem>

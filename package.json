@@ -1,25 +1,22 @@
 {
-  "name": "dshas-design-system",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "test": "turbo run test",
-    "lint": "biome check .",
-    "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.0",
-    "turbo": "^2.4.0",
-    "typescript": "^5.8.0"
-  },
-  "packageManager": "pnpm@10.17.1",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "esbuild"
-    ]
-  }
+	"name": "dshas-design-system",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"test": "turbo run test",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"turbo": "^2.4.0",
+		"typescript": "^5.8.0"
+	},
+	"packageManager": "pnpm@10.17.1",
+	"pnpm": {
+		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+	}
 }
