@@ -1,0 +1,22 @@
+@theme {
+  --color-blue-france: #003a98;
+  --color-blue-france-light: #e3e3fd;
+  --color-blue-france-lighter: #ececfe;
+  --color-blue-france-contrast: #f5f5fe;
+  --color-red-marianne: #d74e54;
+
+  --color-grey-title: #161616;
+  --color-grey-text: #666666;
+  --color-grey-contrast: #eeeeee;
+  --color-grey-bg: #ffffff;
+
+  --color-hover-overlay: rgba(0, 0, 0, 0.04);
+
+  --color-info: #0063cb;
+  --color-success: #18753c;
+  --color-warning: #b34000;
+  --color-error: #ce0500;
+
+  --font-raleway: "Raleway", sans-serif;
+  --font-sans: "Raleway", sans-serif;
+}
