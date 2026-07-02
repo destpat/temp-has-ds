@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm view *)",
+      "WebFetch(domain:www.systeme-de-design.gouv.fr)",
+      "WebFetch(domain:components.react-dsfr.fr)",
+      "WebFetch(domain:github.com)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "figma",
+    "chrome-devtools"
+  ]
+}
